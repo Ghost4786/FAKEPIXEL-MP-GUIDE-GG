@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fakepixel MP Guide 2.0</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #f8f8f8;
+      background: linear-gradient(180deg, #0b0d12, #1c1f29);
+      overflow-x: hidden;
+    }
+
+    .particles {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .particle {
+      position: absolute;
+      background: rgba(255, 215, 0, 0.8);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      animation: float 12s infinite linear;
+    }
+    @keyframes float {
+      from { transform: translateY(100vh) scale(0.5); opacity: 0; }
+      20% { opacity: 1; }
+      to { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+      animation: fadeInUp 1s ease;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #ffd700;
+      text-shadow: 0 0 10px #ffd700, 0 0 20px #ff8800;
+      animation: glow 2s infinite alternate;
+    }
+
+    h2 {
+      margin: 1rem 0;
+      color: #7ec8ff;
+      text-shadow: 0 0 8px #00c3ff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+      font-size: 14px;
+      background: rgba(20, 20, 20, 0.7);
+    }
+
+    th, td {
+      padding: 0.6rem;
+      border: 1px solid #555;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    td:hover {
+      transform: scale(1.05);
+      text-shadow: 0 0 8px currentColor;
+    }
+
+    .legendary { color: #ffd700; font-weight: 600; }
+    .epic { color: #aa00ff; font-weight: 600; text-shadow: 0 0 8px #aa00ff, 0 0 16px #660099; }
+    .rare { color: #0094ff; font-weight: 600; }
+    .uncommon { color: #00cc66; font-weight: 600; }
+    .common { color: #bfbfbf; font-weight: 600; }
+    .mythic { color: #ff6600; font-weight: 600; }
+    .special { color: #ff3333; font-weight: 600; }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 12px;
+      color: #00ffe0;
+      animation: glowFooter 2s infinite alternate;
+    }
+    @keyframes glowFooter {
+      from { text-shadow: 0 0 5px #00ffe0; }
+      to { text-shadow: 0 0 20px #00ffe0; }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #ffd700; }
+      to { text-shadow: 0 0 20px #ffae00; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="particles"></div>
+  <div class="container">
+    <h1>Fakepixel MP Guide 2.0</h1>
+
+    <section>
+      <h2>List of Accessories</h2>
+      <table>
+        <thead>
+          <tr>
+            <th class="legendary">Legendary</th>
+            <th class="epic">Epic</th>
+            <th class="rare">Rare</th>
+            <th class="uncommon">Uncommon</th>
+            <th class="common">Common</th>
+            <th class="mythic">Mythic</th>
+            <th class="special">Special</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="legendary">Shiny Charm</td>
+            <td class="epic">Red Claw Artifact</td>
+            <td class="rare">Day Crystal</td>
+            <td class="uncommon">Piggy Bank</td>
+            <td class="common">Handy Blood Chalice</td>
+            <td class="mythic">Ancient Amulet</td>
+            <td class="special">Danielo 18th Birthday Cake*</td>
+          </tr>
+          <tr>
+            <td class="legendary">Shen's Regalia</td>
+            <td class="epic">Draconic Artifact</td>
+            <td class="rare">Night Crystal</td>
+            <td class="uncommon">Gravity Talisman</td>
+            <td class="common">Skeleton Talisman</td>
+          </tr>
+          <tr>
+            <td class="legendary">Artifact of Control</td>
+            <td class="epic">Nether Artifact</td>
+            <td class="rare">Survivor Cube</td>
+            <td class="uncommon">Lava Talisman</td>
+            <td class="common">Village Affinity Talisman</td>
+          </tr>
+          <tr>
+            <td class="legendary">Jacobus Register</td>
+            <td class="epic">Tarantula Talisman</td>
+            <td class="rare">Potion Affinity Artifact</td>
+            <td class="uncommon">Farmer Orb</td>
+            <td class="common">Night Vision Charm</td>
+          </tr>
+          <tr>
+            <td class="legendary">Prestige Chocolate Realm</td>
+            <td class="epic">Seal of the Family</td>
+            <td class="rare">Speed Artifact</td>
+            <td class="uncommon">Emerald Ring</td>
+            <td class="common">Farming Talisman</td>
+          </tr>
+          <tr>
+            <td class="legendary">Wither Relic</td>
+            <td class="epic">Haste Artifact</td>
+            <td class="rare">Wolf Ring</td>
+            <td class="uncommon">Magnetic Talisman</td>
+            <td class="common">Talisman of Coins</td>
+          </tr>
+          <tr>
+            <td class="legendary">Scarf Grimoire</td>
+            <td class="epic">Experience Artifact</td>
+            <td class="rare">Zombie Artifact</td>
+            <td class="uncommon">Wood Affinity Talisman</td>
+            <td class="common">Mine Affinity Talisman</td>
+          </tr>
+          <tr>
+            <td class="legendary">Titanium Relic</td>
+            <td class="epic">Spider Artifact</td>
+            <td class="rare">Devour Ring</td>
+            <td class="uncommon">Wolf Paw</td>
+            <td class="common">Fire Talisman</td>
+          </tr>
+          <tr>
+            <td class="legendary">Reaper Orb</td>
+            <td class="epic">Burststopper Artifact</td>
+            <td class="rare">Anita's Artifact</td>
+            <td class="uncommon">Jungle Amulet</td>
+            <td class="common">Scavenger Talisman</td>
+          </tr>
+          <tr>
+            <td class="legendary">Auto Recombobulator</td>
+            <td class="epic">Odger's Diamond Tooth</td>
+            <td class="rare">Bits Talisman</td>
+            <td class="uncommon">Eternal Flame Ring</td>
+            <td class="common">Netherrack-looking Sunshade</td>
+          </tr>
+          <tr>
+            <td class="legendary">Razor-sharp Shark Tooth Necklace</td>
+            <td class="epic">Soulflow Supercell</td>
+            <td class="rare">Pig's Foot</td>
+            <td ></td>
+            <td class="common">Archaeologist's Compass</td>
+          </tr>
+          <tr>
+            <td class="legendary">Beastmaster Crest</td>
+            <td class="epic">Spiked Atrocity</td>
+            <td class="rare">Bat Person Artifact</td>
+            <td ></td>
+            <td class="common">Kings Talisman</td>
+          </tr>
+          <tr>
+            <td class="legendary">Gold Gift Talisman</td>
+            <td class="epic">Intimidation Relic</td>
+            <td class="rare">Glacial Artifact</td>
+            <td></td>
+            <td class="common">Great Spook Talisman</td>
+          </tr>
+          <tr>
+            <td class="legendary">Treasure Artifact</td>
+            <td class="epic">Hocus-Pocus Cypher</td>
+            <td class="rare">Fish Affinity Talisman</td>
+          </tr>
+          <tr>
+            <td class="legendary">Campfire God Badge</td>
+            <td class="epic">Cheetah Talisman</td>
+            <td class="rare">Sea Creature Artifact</td>
+          </tr>
+          <tr>
+            <td class="legendary">Bat Artifact</td>
+            <td class="epic">Emperor Artifact</td>
+            <td class="rare">Feather Artifact</td>
+          </tr>
+          <tr>
+            <td class="legendary">Candy Relic</td>
+            <td class="epic">Artifact of Power</td>
+            <td class="rare">Blaze Talisman</td>
+          </tr>
+          <tr>
+            <td class="legendary">Ender Relic</td>
+            <td class="epic">Glossy Mineral Talisman</td>
+            <td class="rare">Eternal Hoof</td>
+          </tr>
+          <tr>
+            <td class="legendary">Golden Jerry Artifact</td>
+            <td class="epic"></td>
+            <td class="rare">Fermento Artifact</td>
+          </tr>
+          <tr>
+            <td class="legendary">Master Skull Tier 7</td>
+            <td></td>
+            <td class="rare">Vaccine Artifact</td>
+          </tr>
+          <tr>
+            <td class="legendary">Pulse Ring</td>
+            <td></td>
+            <td class="rare">Abicase</td>
+          </tr>
+          <tr>
+            <td class="legendary">Personal Compactor 7000</td>
+            <td></td>
+            <td class="rare">Bucket of Dye</td>
+          </tr>
+          <tr>
+            <td class="legendary">Personal Deletor 7000</td>
+            <td></td>
+            <td class="rare">Hunter Ring</td>
+          </tr>
+          <tr>
+            <td class="legendary">Bugged Piece of Code</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+         </tr>
+          <tr>
+            <td class="legendary">Total: 25</td>
+            <td>Total: 19</td>
+            <td>Total: 24</td>
+            <td>Total: 11</td>
+            <td>Total: 14</td>
+            <td>Total: 1</td>
+            <td>Total: 1</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>MP Stats</h2>
+      <table>
+        <thead>
+          <tr><th>MAX MP</th><th>MP Per</th><th>No Recomb</th><th>MP Per (+Recomb)</th><th>(+Recomb)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="legendary">25 LEGENDARY</td><td>16</td><td>400</td><td>22</td><td>550</td></tr>
+          <tr><td class="epic">18 EPIC</td><td>12</td><td>216</td><td>16</td><td>288</td></tr>
+          <tr><td class="rare">24 RARE</td><td>8</td><td>192</td><td>12</td><td>288</td></tr>
+          <tr><td class="uncommon">11 UNCOMMON</td><td>5</td><td>55</td><td>8</td><td>88</td></tr>
+          <tr><td class="common">14 COMMON</td><td>3</td><td>42</td><td>5</td><td>70</td></tr>
+          <tr><td class="mythic">1 MYTHIC</td><td>22</td><td>22</td><td>28</td><td>28</td></tr>
+          <tr><td class="special">1 SPECIAL</td><td>3</td><td>3</td><td>5</td><td>5</td></tr>
+          <tr><td>Hegemony Buff</td><td></td><td>16</td><td></td><td>22</td></tr>
+          <tr><td>Abicase Bonus</td><td></td><td>13</td><td></td><td>13</td></tr>
+          <tr><td>Total</td><td></td><td>959</td><td></td><td>1344</td></tr>
+        </tbody>
+      </table>
+
+      <div style="margin-top: 1rem; text-align:center; background:rgba(255,255,255,0.1); padding:0.5rem; border-radius:8px;">
+        <p>NOT OBTAINABLE ANYMORE*: <span class="special">Great Spook Talisman</span> — <span class="special">Danielo 18th Birthday Cake*</span></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made by GG server</p>
+    </footer>
+  </div>
+
+  <script>
+    const particles = document.querySelector('.particles');
+    for (let i = 0; i < 40; i++) {
+      const p = document.createElement('div');
+      p.classList.add('particle');
+      p.style.left = Math.random() * 100 + 'vw';
+      p.style.animationDuration = 10 + Math.random() * 10 + 's';
+      p.style.opacity = Math.random();
+      p.style.transform = `scale(${Math.random()})`;
+      particles.appendChild(p);
+    }
+  </script>
+</body>
+</html>
